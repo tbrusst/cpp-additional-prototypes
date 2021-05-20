@@ -53,9 +53,11 @@ void main() {
   vec3 maskEdgeColor = mix(u_maskEdgeColor, imageColor.brg, 0.5);
   // vec3 maskEdgeColor = imageColor.brg;
 
-  vec3 bkHighlight =  mix(maskEdgeColor, u_bkColor,  pct2);
+  // vec3 bkHighlight =  mix(maskEdgeColor, u_bkColor,  pct2);
+  vec3 bkHighlight =  mix(u_bkColor, maskEdgeColor,  pct2);
 
-  vec4 maskedImage =  mix(imageColor, vec4(bkHighlight, 1.),  pct1);
+  // vec4 maskedImage =  mix(imageColor, vec4(bkHighlight, 1.),  pct1);
+  vec4 maskedImage =  mix( vec4(bkHighlight, 1.),  imageColor, pct1);
 
   vec4 color = maskedImage;
   

@@ -4,21 +4,21 @@ const createRegl = require('regl');
 import frag from '../shaders/2_frag.frag';
 
 import fullVert from '../shaders/full.vert';
-import skullImage from '../images/skulls-illo.png';
+import skullImage from '../images/vein-texture.png';
 
 const gui = new dat.GUI();
 
 const data = {
   animateGrain: true,
   grainAmount: 0.15,
-  noiseSpeed: 0.05,
-  noiseFreq: 18,
-  maskLowEnd: 0.89,
-  maskHighEnd: 1,
+  noiseSpeed: 0,
+  noiseFreq: 2,
+  maskLowEnd: 0.85,
+  maskHighEnd: 0.85,
   bkColor: [250, 250, 250],
   maskClamp: 0.5,
   maskGradient: 0.61,
-  maskEdgeColor: [165, 0, 255],
+  maskEdgeColor: [227, 226, 220],
   maskEdgeSize: 0.1,
 };
 

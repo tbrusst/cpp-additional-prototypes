@@ -14,7 +14,7 @@ const data = {
   animateGrain: true,
   grainAmount: 0.15,
   noiseSpeed: 0,
-  noiseFreq: 1,
+  noiseFreq: 2,
   maskLowEnd: 0.85,
   maskHighEnd: 0.85,
   bkColor: [57, 48, 42],
