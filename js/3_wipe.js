@@ -13,9 +13,9 @@ const gui = new dat.GUI();
 const data = {
   animateGrain: true,
   grainAmount: 0.15,
-  noiseSpeed: 0.025,
-  noiseFreq: 12,
-  maskLowEnd: 0.78,
+  noiseSpeed: 0,
+  noiseFreq: 1,
+  maskLowEnd: 0.85,
   maskHighEnd: 0.85,
   bkColor: [57, 48, 42],
   maskGradient: 0.5,
